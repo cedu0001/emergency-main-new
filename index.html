@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/layout.css" />
 		<link rel="stylesheet" href="css/burger.css" />
 		<link rel="stylesheet" href="css/cards.css" />
+		<script src="/js/popup.js" defer></script>
 		<link rel="icon" type="image/png" href="img/fav.png" />
 		<title>Emergency Site</title>
 	</head>
@@ -63,19 +64,116 @@
 					<h3>Sådan undgår du at blive ofret til en skyggegud</h3>
 					<p>Acharas begynderguide til at undslippe mørke ritualer...</p>
 					<img src="/img/achara.webp" alt="news_img" class="news_img" />
-					<a class="cta_btn-nyheder-1" href="">Læs mere</a>
+					<!-- tilføjer dialog element -->
+					<dialog id="dialog-1">
+						<h3>Sådan undgår du at blive ofret til en skyggegud</h3>
+						<p>Acharas begynderguide til at undslippe mørke ritualer...</p>
+						<img src="/img/achara.webp" alt="news_img" class="news_img" />
+						<p>
+							Forestil dig dette: Du vågner i en tåget, lilla jungle. Himlen har tre måner, og alle lokale
+							bærer hætter og mumler om "det store mørke, der sover under bjerget". Hvis du hører sætninger som
+							"den udvalgte" eller "vi har ventet på dig", så tillykke – du er meget tæt på at blive ofret til
+							en skyggegud.
+						</p>
+						<p>
+							Men frygt ej! Vi har samlet de bedste tips fra interdimensionelle overlevere og én meget
+							traumatiseret postbud fra Næstved:
+						</p>
+						<ol>
+							<li>
+								Undgå øjenkontakt med præster i lange kapper De kan lugte frygt. Og bacon. Spis ikke bacon.
+							</li>
+							<li>
+								Hvis nogen omtaler dig som “den lysende”, så løb! Det lyder flatterende. Det er det ikke. Det
+								er præ-offer terminologi.
+							</li>
+							<li>
+								Lær den lokale skyggeguds navn – og stav det rigtigt! Mange ritualer kræver korrekt
+								navneudtale. Sæt en ære i at udtale Xh’thluur’gnax forkert. Med vilje.
+							</li>
+							<li>
+								Bær spejle – mange skyggeguder hader deres refleksion! Det er lidt som vampyrer, bare mere...
+								tentakelagtigt.
+							</li>
+							<li>
+								Søg hjælp! Har du glemt din anti-ritual manual i dit gamle univers? Frygt ej – ansøg her om
+								en personlig <a href="register.html">parallelunivers-guide</a>!
+							</li>
+						</ol>
+						<p>
+							Husk: Hvis du bliver tilbudt en hætte og bedt om at "følge med i stilhed", så er det ALDRIG til
+							brunch.
+						</p>
+						<form method="dialog">
+							<!-- close button -->
+							<button>Luk</button>
+						</form>
+					</dialog>
+					<button class="cta_btn-nyheder-1" id="openBtn1">Læs mere</button>
 				</article>
 				<article class="news_card">
 					<h3>REPORTAGE: Askeormen og Luftbetvingeren: Det regnede ild – og jokes?</h3>
 					<p>Af Trelia Gnistpust, freelance-reporter for Kridt & Krystaller</p>
 					<img src="/img/kairon.webp" alt="news_img" class="news_img" />
-					<a class="cta_btn-nyheder-2" href="">Læs mere</a>
+					<dialog id="dialog-2">
+						<h3>REPORTAGE: Askeormen og Luftbetvingeren: Det regnede ild – og jokes?</h3>
+						<p>Af Trelia Gnistpust, freelance-reporter for Kridt & Krystaller</p>
+						<img src="/img/kairon.webp" alt="news_img" class="news_img" />
+						<p>Øjensøen, tirsdag –</p>
+						<blockquote>
+							"Det begyndte med en hvislen. Ikke sådan en sød hvislen – men mere som om nogen kogte vrede inde
+							i klipperne. Og SÅ kom han."
+						</blockquote>
+						<p>
+							Enorme støvskyer og glødende skæl blev set over Øjensøens udkant i går, da den sagnomspundne
+							Askeorm brød gennem lavaplanterne for første gang i 300 år. Og Kairon, kendt som "Luft Mesteren",
+							fløj bogstaveligt talt ind i billedet, iført sin karakteristiske vinddragt og et grin, der ikke
+							passede til situationen.
+						</p>
+						<blockquote>
+							“Han sagde: ‘Hold min te, det her bliver lunt’... og så svævede han bare op foran ormen!” – Eyra,
+							barpige på Det Halve Horn
+						</blockquote>
+
+						<p>
+							Øjenvidner beskriver, hvordan Kairon jonglerede med små vindkugler og råbte noget om
+							"temperaturjustits", før han slyngede sig op i spiral omkring ormens kæber.
+						</p>
+						<blockquote>
+							“Jeg tror ikke engang han havde en plan… men han lignede én, der hyggede sig gevaldigt,” siger
+							Tovel, en lokal brøndpasser.
+						</blockquote>
+
+						<p>
+							Kampen varede 14 minutter. Eller 5. Eller 3 dage – kilderne er uenige. Men da støvet lagde sig,
+							var ormen forsvundet, og Kairon sad på en sten og spiste dadler.
+						</p>
+						<blockquote>
+							“Han tilbød mig en og sagde, ‘Det var jo bare lidt varm luft.’ Jeg græd stadig,” fortæller Eyra.
+						</blockquote>
+						<p>
+							Det vides ikke, hvor Kairon fløj hen bagefter. Nogle siger sydpå. Andre siger opad. Ingen tør
+							spørge.
+						</p>
+						<form method="dialog">
+							<button>Luk</button>
+						</form>
+					</dialog>
+					<a class="cta_btn-nyheder-2" href="" id="openBtn2">Læs mere</a>
 				</article>
 				<article class="news_card">
 					<h3>Interview: AI-overherre hævder at være ‘helt normal venlig leder’</h3>
 					<p>– Men hvorfor lugter maskinrummet af smeltet menneskesjæl?</p>
 					<img src="/img/evilai.webp" alt="news_img" class="news_img" />
-					<a class="cta_btn-nyheder-1" href="">Læs mere</a>
+					<dialog id="dialog-3">
+						<h3>Interview: AI-overherre hævder at være ‘helt normal venlig leder’</h3>
+						<p>– Men hvorfor lugter maskinrummet af smeltet menneskesjæl?</p>
+						<img src="/img/evilai.webp" alt="news_img" class="news_img" />
+						<form method="dialog">
+							<button>Luk</button>
+						</form>
+					</dialog>
+					<a class="cta_btn-nyheder-1" href="" id="openBtn3">Læs mere</a>
 				</article>
 			</section>
 		</main>

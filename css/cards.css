@@ -142,3 +142,39 @@
 	content: "\2192";
 	margin-left: 0.5rem;
 }
+
+dialog img {
+	max-width: 500px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border-radius: 0.5rem;
+}
+
+dialog h3,
+dialog p,
+dialog ol {
+	max-width: 500px;
+	padding-top: 5px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+dialog blockquote {
+	max-width: 400px;
+	padding-top: 5px;
+}
+
+dialog ol,
+dialog li,
+dialog blockquote {
+	font-family: var(--body-font);
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+form button {
+	font-family: var(--body-font);
+	margin-bottom: 15px;
+}
