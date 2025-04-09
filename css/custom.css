@@ -1,0 +1,93 @@
+:root {
+	/* Colours */
+	--primary-bg-color: #fffae2; /* used */
+	/* 	--primary-font-color: #474d52; /* used */
+
+	--secondary-bg-color: #5d656c; /* used */
+	--secondary-font-color: #d5e5f4; /* used */
+
+	/* CAN BE DELETED WHEN THE PLACEHOLDER CLASS IS DELETED */
+	--placeholder-bg-color: #eb9e1a; /* used */
+	--placeholder-font-color: #575c61; /* used */
+
+	/* NOT USED AT THE MOMENT */
+	--info-color: #17a2b8;
+	--warning-color: #ffc107;
+	--danger-color: #dc3545;
+
+	/* Borders */
+	--border-color: #007bff; /* used */
+	--border-color-light: #f7f5c2; /* used */
+	--border-radius: 37px;
+
+	/* Links */
+	--link-color: #84888e; /* used */
+	--hover-color: #f9fcfe; /* used */
+	--active-color: #f52727; /* used */ /* PLEASE REMEMBER TO CHANGE CELIA */
+
+	/* From styletile */
+
+	/* Fonts */
+	--logotype-font: "Rubik-Bold", sans-serif;
+	--headline-font: "Rubik-Bold", sans-serif;
+	--body-font: "Rubik-Regular", sans-serif;
+	--link-font: "Rubik-Regular", sans-serif;
+	--rubik-light-font: "Rubik-Light", sans-serif;
+
+	/* Text sizes */
+	--logotype-size: 48px;
+	--headline1-size: 48px;
+	--headline2-size: 36px;
+	--headline3-size: 32px;
+	--bodytext-size: 20px;
+	--cta-text-size: 20px;
+	--cta-header-text-size: 20px;
+	--form-submit-size: 16px;
+
+	/* Text colors */
+	--logotype-color: #fffae2;
+	--headline-color: #ffffff;
+	--headline-color-inverted: #fffae2;
+	--bodytext-color: #ea00ff;
+	--bodytext-color-inverted: #f700ff;
+	--cta-text-color: #fffae2;
+	--cta-text-color-inverted: #bbc3ca;
+	--followup-text-color: #000000;
+	--cta-header-color-inverted: #ffffff;
+	--formfield-text-color: #000000;
+	--form-submit-color: #fffae2;
+	--form-submit-color-inverted: #000000;
+
+	/* Background colors */
+	--primary-bg-color: #fceb94;
+	--logotype-background-color: #000000;
+	--header-background-color: #6f90eb;
+	--article-background-color: #fffae2;
+	--daily-background-color: #ffffff;
+	--main-disclamer-background-color: #ff4b00;
+	--news-background-color: #ff00ee;
+	--news-background-color-inverted: #dbe2f5;
+	--info-background-color: #dbdde3;
+	--headline-bg-color: #ff00f7;
+	--headline-bg-color-alert: #ff4b00;
+	--headline-bg-color-inverted: #000000;
+	--bodytext-bg-color: #ff00c3;
+	--bodytext-bg-color-inverted: #ff00b7;
+	--cta-text-bg-color: #ff00bb;
+	--cta-text-bg-color-inverted: #ff00c8;
+	--cta-nyheder-2-bg: #ffa680;
+	--h-cta-text-bg-color: #fffae2;
+	--cta-header-text-bg-color: #86533d; /* cta knapper, de andre to sider */
+	--followup-text-bg-color-inverted: #ff00ff;
+	--form-background-color: #ffffff;
+	--form-text-color: #000000;
+	--formfield-background-color: #ff00c3;
+	--formfield-background-color-active: #ff00e1;
+	--form-submit-bg-color: #ff4b00;
+	--form-submit-bg-color-inverted: #ff00e1;
+	--cta-artikel-bg-color: #ff4b00;
+
+	/* Info-boxes */
+	--info-bg-color-yellow: #fceb94;
+	--info-bg-color-green: #def5db;
+}

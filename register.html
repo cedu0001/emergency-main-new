@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/custom.css" />
+		<link rel="stylesheet" href="css/general.css" />
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/infographic.css" />
+		<link rel="stylesheet" href="css/forms.css" />
+		<script src="js/form.js" defer></script>
+		<link rel="icon" type="image/png" href="img/fav.png" />
+		<title>Emergency Site</title>
+	</head>
+	<body id="register">
+		<header>
+			<nav>
+				<div id="logotype-wrapper">
+					<a href="index.html"> LOGOTYPE </a>
+				</div>
+				<ul class="menu">
+					<li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+					<li><a class="menuItem" href="register.html">Indberet</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<h1>INDBERET</h1>
+			<section id="form-sec">
+				<form id="webform">
+					<article id="form-info">
+						<h2 id="form-h2">Parallelt univers helpdesk</h2>
+						<p>
+							Velkommen til helpdesken, en service der tilbyder dig, som er fanget et eller andet sted, en
+							lille hjælp til hva' enden dit problem kunne være, ved at sende en guide til dig! Du skal blot
+							uddfylde denne formular og så gennemgår vi den hurtigst muligt!
+						</p>
+					</article>
+					<fieldset id="personlig-info">
+						<legend>Personoplysninger</legend>
+						<section class="form-group">
+							<label for="name">Navn (hvad skal guiden kalde dig?)</label>
+							<input id="name" name="name" type="text" required />
+						</section>
+						<section class="form-group">
+							<label for="hvor-er-du">Hvor er du strandet?</label>
+							<select name="hvor-er-du" id="hvor-er-du" onchange="visAndetInput()" required>
+								<option value="">--Vælg et sted--</option>
+								<option value="Ukendt tomrum">I et ukendt tomrum</option>
+								<option value="Ørken">Midt i en ørken</option>
+								<option value="Mørk skov">I en mørk skov</option>
+								<option value="Storby">I en storby fyldt med robotter</option>
+								<option value="Barda">Barda??</option>
+								<option value="Andet">Andet</option>
+							</select>
+							<input
+								type="text"
+								id="andetInput"
+								placeholder="Skriv din egen mulighed..."
+								style="display: none"
+								required
+							/>
+						</section>
+					</fieldset>
+
+					<fieldset id="dit-problem">
+						<legend>Beskriv dit problem</legend>
+						<section class="form-group">
+							<label for="problem-oplevelse">Hvilket problem oplever du?</label>
+							<select name="problem-dropdown" id="problem-dropdown" onchange="visAndetInput2()" required>
+								<option value="">--Vælg det problem der bedst beskriver dit--</option>
+								<option value="slimklat">
+									Jeg er blevet forvandlet til en slimklat, og det er IKKE fedt.
+								</option>
+								<option value="sword">Mit sværd snakker til mig, og jeg vil ikke høre mere på det.</option>
+								<option value="soul-to-fairy">
+									Jeg har ved et uheld lovet min sjæl til en fe. Hvordan forhandler jeg den tilbage?
+								</option>
+								<option value="hero">
+									Alle i denne verden tror, jeg er en profetiens helt. Jeg har INGEN anelse om, hvad jeg
+									laver.
+								</option>
+								<option value="help">HJÆLP! HJÆLP! JEG KAN IKKE KOMME HJEM!</option>
+								<option value="andet2">Andet</option>
+							</select>
+							<input
+								type="text"
+								id="andetInput2"
+								placeholder="Skriv din egen mulighed..."
+								style="display: none"
+								required
+							/>
+						</section>
+						<section class="form-group">
+							<label for="problem-fix">Hvad har du allerede prøvet for at løse problemet?</label>
+							<textarea
+								name="problem-fix"
+								id="problem-fix"
+								required
+								placeholder="Jeg tog en lur og håbede, det ville gå væk af sig selv. Det gjorde det ikke."
+							></textarea>
+						</section>
+					</fieldset>
+
+					<fieldset id="choose-guide">
+						<legend>Vælg din guide</legend>
+						<section class="form-group">
+							<label for="din-guide">Hvem vil du have som guide?</label>
+							<select name="din-guide" id="din-guide" required>
+								<option value=""><p>--Vælg en guide--</p></option>
+								<option value="troldmand">En klog troldmand</option>
+								<option value="cyborg">En cyborg-assistent</option>
+								<option value="gud">En doven gud</option>
+								<option value="eventyrer">En hyperaktiv eventyrer</option>
+								<option value="advokat">En demonisk advokat</option>
+							</select>
+						</section>
+						<section class="form-group" id="patience-color">
+							<label for="patience">Hvor tålmodig er du?</label>
+							<div class="form-group-flex-p">
+								<p>Meget tålmodig</p>
+								<p>HJÆLP MIG NU!!!</p>
+							</div>
+
+							<input type="range" name="patience" id="patience" min="0" max="100" value="0" required />
+							<span id="patienceValue"></span>
+						</section>
+					</fieldset>
+					<fieldset id="betaling">
+						<legend>Betaling</legend>
+						<section class="form-group">
+							<label for="genstand">Hvilken genstand er du villig til at betale med?</label>
+							<select name="genstand" id="genstand" required>
+								<option value="">--Vælg en genstand--</option>
+								<option value="soul-contract">Din sjæl (ikke refunderbar, ingen reklamationsret)</option>
+								<option value="object">
+									En jordisk genstand (fx en kuglepen, en mobiloplader, en pose chips?)
+								</option>
+								<option value="riddle">En gåde (håber, din guide elsker hjernetrim!)</option>
+								<option value="shadow">
+									En lille smule af din skygge (håber ikke, du får brug for den senere!)
+								</option>
+								<option value="firstborn">Din førstefødte… nej vent, det er nok for meget</option>
+							</select>
+						</section>
+
+						<section>
+							<label for="ja-nej">Er du ok med magiske bivirkninger?</label>
+							<div class="form-group-flex-p">
+								<label for="ja-nej">Ja</label>
+								<input type="radio" id="ja" name="ja-nej" value="Ja" required />
+							</div>
+							<div class="form-group-flex-p">
+								<label for="ja-nej">Nej</label>
+								<input type="radio" id="nej" name="ja-nej" value="Nej" required />
+							</div>
+						</section>
+					</fieldset>
+					<section class="sign-here-section">
+						<label for="sign-here">Skriv under her!</label>
+						<input type="text" id="sign-here" name="sign-here" required />
+
+						<button id="indsend" type="submit">Indsend</button>
+					</section>
+				</form>
+			</section>
+			<section id="form-summary">
+				<h2>Summary</h2>
+				<article id="sum">
+					<div>
+						<h3>Navn</h3>
+						<p id="sumName"></p>
+					</div>
+					<div>
+						<h3>Hvor er du strandet?</h3>
+						<p id="sumHvor-er-du"></p>
+					</div>
+					<div>
+						<h3>Hvilket problem oplever du?</h3>
+						<p id="sumProblem-dropdown"></p>
+					</div>
+					<div>
+						<h3>Hvad har du allerede prøvet for at løse problemet?</h3>
+						<p id="sumProblem-fix"></p>
+					</div>
+					<div>
+						<h3>Hvem vil du have som guide?</h3>
+						<p id="sumDin-guide"></p>
+					</div>
+					<div>
+						<h3>Hvor tålmodig er du?</h3>
+						<p id="sumPatience"></p>
+					</div>
+					<div>
+						<h3>Hvilken genstand er du villig til at betale med?</h3>
+						<p id="sumGenstand"></p>
+					</div>
+					<div>
+						<h3>Er du ok med magiske bivirkninger?</h3>
+						<p id="sumJANEJ"></p>
+					</div>
+
+					<form>
+						<button id="reset-btn" type="reset">Godkend</button>
+					</form>
+					<!-- <p class="placeholder">Opsummering</p> -->
+				</article>
+			</section>
+		</main>
+		<span id="footer_span"></span>
+		<footer>
+			<nav class="some">
+				<ul>
+					<li><a href="">link</a></li>
+					<li><a href="">link</a></li>
+					<li><a href="">link</a></li>
+					<li><a href="">link</a></li>
+				</ul>
+			</nav>
+			<nav class="another">
+				<ul>
+					<li><a href="">link</a></li>
+					<li><a href="">link</a></li>
+					<li><a href="">link</a></li>
+					<li><a href="">link</a></li>
+				</ul>
+			</nav>
+			<nav class="yetanother">
+				<ul>
+					<li><a href="">link</a></li>
+					<li><a href="">link</a></li>
+					<li><a href="">link</a></li>
+					<li><a href="">link</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+</html>
