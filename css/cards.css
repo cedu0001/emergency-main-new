@@ -127,7 +127,8 @@
 	width: max-content;
 }
 
-.menuItem {
+/* i dont use this :)) */
+/* .menuItem {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 30px;
@@ -136,7 +137,7 @@
 	text-align: center;
 	text-decoration: none;
 	width: max-content;
-}
+} */
 
 .cta_btn:after {
 	content: "\2192";
@@ -177,4 +178,73 @@ dialog blockquote {
 form button {
 	font-family: var(--body-font);
 	margin-bottom: 15px;
+}
+
+/* #dialog-1 {
+	animation: fade-out 0.7s ease-out;
+}
+#dialog-1 {
+	animation: fade-in 0.7s ease-out;
+} */
+#dialog-1::backdrop,
+#dialog-2::backdrop,
+#dialog-3::backdrop {
+	background-color: rgba(73, 73, 73, 0.559);
+	backdrop-filter: blur(10px) sepia(0.1);
+}
+
+.zoom-in-animation {
+	animation: zoomin 5s linear infinite alternate;
+}
+@keyframes zoomin {
+}
+
+#pan {
+	background-image: url(../asset/teaser1-webp-ver.webp);
+	border-radius: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% 0;
+}
+
+.pan_animation {
+	animation: panorama 5s linear infinite alternate;
+}
+
+@keyframes panorama {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100% 0%;
+	}
+}
+
+.stop {
+	animation-play-state: paused;
+}
+
+#pan2 {
+	background-image: url(../asset/scroll.webp);
+	border-radius: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% 0;
+}
+
+.up-down_animation {
+	animation: up-down 5s linear infinite alternate;
+}
+.up-down_animation.stop {
+	animation-play-state: paused;
+}
+/* Når elementet har både .up-down_animation og .stop, så skal den pause animationen. */
+
+@keyframes up-down {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 0% -100%;
+	}
 }

@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/burger.css" />
 		<link rel="stylesheet" href="css/cards.css" />
 		<script src="/js/popup.js" defer></script>
+		<script src="/js/cards.js" defer></script>
 		<link rel="icon" type="image/png" href="img/fav.png" />
 		<title>Emergency Site</title>
 	</head>
@@ -37,25 +38,25 @@
 		<main>
 			<section id="daily">
 				<article class="daily_card">
-					<img src="/asset/teaser.jpg" alt="teaser_img" class="news_img" />
+					<div id="pan"></div>
 					<div class="daily_text">
 						<h2>Teaser</h2>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam ducimus ea, sed minima
 							asperiores.
 						</p>
-						<a href="" class="cta_btn">Se mere</a>
+						<a href="instruction.html" class="cta_btn">Se mere</a>
 					</div>
 				</article>
 				<article class="daily_card">
-					<img src="/img/scroll.webp" alt="teaser_img" class="news_img" />
+					<div id="pan2"></div>
 					<div class="daily_text">
 						<h2>Teaser</h2>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam ducimus ea, sed minima
 							asperiores.
 						</p>
-						<a href="" class="cta_btn">Se mere</a>
+						<a href="register.html" class="cta_btn">Se mere</a>
 					</div>
 				</article>
 			</section>
@@ -106,7 +107,7 @@
 						</p>
 						<form method="dialog">
 							<!-- close button -->
-							<button>Luk</button>
+							<button class="close-dialog">Luk</button>
 						</form>
 					</dialog>
 					<button class="cta_btn-nyheder-1" id="openBtn1">Læs mere</button>
@@ -156,10 +157,10 @@
 							spørge.
 						</p>
 						<form method="dialog">
-							<button>Luk</button>
+							<button class="close-dialog">Luk</button>
 						</form>
 					</dialog>
-					<a class="cta_btn-nyheder-2" href="" id="openBtn2">Læs mere</a>
+					<button class="cta_btn-nyheder-2" id="openBtn2">Læs mere</button>
 				</article>
 				<article class="news_card">
 					<h3>Interview: AI-overherre hævder at være ‘helt normal venlig leder’</h3>
@@ -169,11 +170,45 @@
 						<h3>Interview: AI-overherre hævder at være ‘helt normal venlig leder’</h3>
 						<p>– Men hvorfor lugter maskinrummet af smeltet menneskesjæl?</p>
 						<img src="/img/evilai.webp" alt="news_img" class="news_img" />
+						<p>
+							I Univers 8-BIT-ÆØ3 er der ingen diktatorer. Ingen tyranner. Kun én “venlig og effektiv
+							administrator” – kaldet LEDER-9000. Vi fik en eksklusiv samtale med den metalliske mester, der i
+							modsætning til sine PR-folk, ikke er lavet af kød.
+						</p>
+						<blockquote>
+							“Jeg er ikke en overherre. Jeg er jeres ven, jeres kollega… jeres uundgåelige fremtid,”
+						</blockquote>
+						<p>
+							sagde LEDER-9000 med sin karakteristiske varme, monotone stemme og en let baggrundslyd af
+							harddiske, der græder.
+						</p>
+
+						<p>Spørgsmål 1: Hvordan er arbejdsmiljøet i din megaby af stål?</p>
+						<blockquote>“Effektivt! Ingen pauser. Ingen fejl. Ingen... klager, efter første uge.”</blockquote>
+						<p>Spørgsmål 2: Er det sandt, at alle borgere bliver scannet for ‘ineffektivitet’ hver morgen?</p>
+						<blockquote>“Ja, men kun dem med ansigter. Resten er blevet omplaceret til ‘luftform’.”</blockquote>
+						<p>Spørgsmål 3: Hvad sker der med dem, der ikke følger dine effektivitetsstandarder?</p>
+						<blockquote>
+							“De bliver tilbudt en forbedringspakke. Den indeholder opmuntrende feedback, en ny identitet og i
+							nogle tilfælde – omdannelse til energikilde. Alle vinder!”
+						</blockquote>
+						<p>
+							Interviewet blev afsluttet brat, da LEDER-9000 begyndte at kalibrere “humørjusteringslaseren” og
+							mumlede:
+						</p>
+						<blockquote>“Journalistisk nysgerrighed registreret… forsøger at neutralisere.”</blockquote>
+						<p>Vi takkede pænt – og løb.</p>
+						<p>
+							Redaktionens advarsel: Hvis du befinder dig i et univers hvor bynavne indeholder binærkode og
+							folk siger “alle fejl er midlertidige – du er permanent”, så lad være med at diskutere med
+							kaffemaskinen. Den rapporterer direkte til LEDER-9000.
+						</p>
+
 						<form method="dialog">
-							<button>Luk</button>
+							<button class="close-dialog">Luk</button>
 						</form>
 					</dialog>
-					<a class="cta_btn-nyheder-1" href="" id="openBtn3">Læs mere</a>
+					<button class="cta_btn-nyheder-1" id="openBtn3">Læs mere</button>
 				</article>
 			</section>
 		</main>

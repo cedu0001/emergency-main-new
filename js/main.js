@@ -106,7 +106,7 @@ function fairyInfo(){
 
         animateBoxes();
 
-        document.querySelector(".info-text > h2").textContent = "Forsyninger";
+        document.querySelector(".info-text > h2").textContent = "Forsyninger/Redskaber";
         document.querySelector(".info-text > article > p").textContent = "lorem20";
         document.querySelector("#efficiency").innerHTML = "<h3>test</h3> <p>i hope insta works lmao</p>"
         document.querySelector("#requirement").innerHTML = "<h3>test</h3>"
