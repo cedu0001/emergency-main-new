@@ -31,7 +31,7 @@ function openDialog3(e){
 
     /// Ny version
 
-function setupArticle(article){
+/* function setupArticle(article){
     const openBtn = article.querySelector("article > button");
     const dialog = article.querySelector("dialog");
     const closeBtn = article.querySelector(".close-dialog");
@@ -60,5 +60,40 @@ articles.forEach((article) => {
 articles.forEach(function(article){
     setupArticle(article);
 });
+ */
+////////////////////// animation version
 
+function setupArticle(article){
+    const openBtn = article.querySelector("article > button");
+    const dialog = article.querySelector("dialog");
+    const closeBtn = article.querySelector(".close-dialog");
+
+    openBtn.addEventListener("click", openDialog);
+    function openDialog() {
+        dialog.querySelector("h3").scrollIntoView();
+        dialog.showModal();
+        
+        dialog.classList.remove("dialog-animation");
+        void dialog.offsetWidth;
+        dialog.classList.add("dialog-animation");
+    }
+
+    closeBtn.addEventListener("click", function(){
+    dialog.close();
+
+    });
+}
+
+const articles = document.querySelectorAll(".news_card");
+
+articles.forEach(setupArticle);
+
+articles.forEach((article) => {
+    setupArticle(article);
+
+});
+
+articles.forEach(function(article){
+    setupArticle(article);
+});
 

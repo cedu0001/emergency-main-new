@@ -37,9 +37,12 @@ function headInfo(){
 
     
     document.querySelector(".info-text > h2").textContent = "Hvor er du?!";
-    document.querySelector(".info-text > article > p").textContent = "lorem20";
-    document.querySelector("#efficiency").innerHTML = "<h3>test</h3> <p>where am i ahh</p>";
-    document.querySelector("#requirement").innerHTML = "<h3>test</h3>";
+    document.querySelector(".info-text > article > p").textContent = "At blive fanget i et parallelt univers kan være skræmmende. Det er vigtigt at forstå, hvilken type verden du er i. Er du i en sci-fi verden med avanceret teknologi og fremmede væsner, eller i et magisk fantasy-univers, hvor magi og gamle kræfter styrer? Observer dine omgivelser – er der hologrammer og rumfartøjer, eller magiske væsner og trylleformularer? Dette kan hjælpe dig med at forstå, hvor du er, og hvordan du navigerer i denne nye virkelighed.";
+    document.querySelector("#efficiency").innerHTML = "<h3>Sci-fi verden</h3> <p>Hvis du er i en sci-fi verden, kan det være en god idé at finde ud af, om der er noget teknologisk udstyr, som kan hjælpe dig med at kommunikere eller finde vej.</p>";
+
+
+    
+    document.querySelector("#requirement").innerHTML = "<h3>Fantasy verden</h3> <p>I en fantasy-verden er det ofte nyttigt at lære om de lokale kulturer og tro, da magiske færdigheder eller venskaber med de rette væsner kan være nøglen til at komme hjem.</p>";
 }
 
 //drage
@@ -60,9 +63,9 @@ function dragonInfo(){
     animateBoxes();
 
     document.querySelector(".info-text > h2").textContent = "Fjendtlige skabninger!";
-    document.querySelector(".info-text > article > p").textContent = "lorem20";
-    document.querySelector("#efficiency").innerHTML = "<h3>test</h3> <p>rawrr</p>"
-    document.querySelector("#requirement").innerHTML = "<h3>test</h3>"
+    document.querySelector(".info-text > article > p").textContent = "Når du er i et parallelt univers, er det vigtigt at være opmærksom på de væsner, der måtte udgøre en trussel. Fjendtlige skabninger som drager, monstre eller teknologiske væsner kan være både farlige og uforudsigelige. Hvis du står overfor en drage eller et lignende væsen, er det vigtigt at vurdere, om den er aggressiv eller blot passer på sit territorium. ";
+    document.querySelector("#efficiency").innerHTML = "<h3>Sci-fi verden</h3> <p>I sci-fi universer kan fjender ofte være robotter eller fremmede arter, som har egne mål og interesser.</p>"
+    document.querySelector("#requirement").innerHTML = "<h3>Fantasy verden</h3> <p> I en fantasy-verden kan det være magiske væsner, der reagerer på dine handlinger – enten som ven eller fjende. Tænk hurtigt, og find ud af, hvordan du bedst kan beskytte dig selv eller undgå konfrontation.</p>"
 }
 
 
@@ -84,9 +87,9 @@ function fairyInfo(){
     animateBoxes();
 
     document.querySelector(".info-text > h2").textContent = "Potientielle venner?";
-    document.querySelector(".info-text > article > p").textContent = "lorem20";
-    document.querySelector("#efficiency").innerHTML = "<h3>test</h3> hejjjjj"
-    document.querySelector("#requirement").innerHTML = "<h3>test</h3>"
+    document.querySelector(".info-text > article > p").textContent = "Ikke alt i et parallelt univers er farligt! Der kan være væsner eller personer, der kan blive dine allierede og hjælpe dig med at finde vej hjem. Mød feer, gode trolde eller venlige væsner, som måske har viden om portaler eller skjulte stier, der fører tilbage til din verden. ";
+    document.querySelector("#efficiency").innerHTML = "<h3>Sci-fi verden</h3> <p> I en sci-fi verden kan dette være kunstig intelligens, venlige rumvæsner eller andre, der har interesse i at hjælpe dig med at navigere i det ukendte.</p>"
+    document.querySelector("#requirement").innerHTML = "<h3>Fantasy verden</h3> <p>I en fantasy-verden kan det være væsner, der har magiske evner og kender de skjulte kræfter, der kan hjælpe dig på din rejse. Sørg for at holde øjne og ører åbne for, hvem der kan blive en ven – i denne nye verden kan det være de allermindste væsner, der giver dig den største hjælp!</p>"
 }
 
 //mobil
@@ -107,9 +110,9 @@ function fairyInfo(){
         animateBoxes();
 
         document.querySelector(".info-text > h2").textContent = "Forsyninger/Redskaber";
-        document.querySelector(".info-text > article > p").textContent = "lorem20";
-        document.querySelector("#efficiency").innerHTML = "<h3>test</h3> <p>i hope insta works lmao</p>"
-        document.querySelector("#requirement").innerHTML = "<h3>test</h3>"
+        document.querySelector(".info-text > article > p").textContent = "Når du er i et parallelt univers, start med at gennemgå dine lommer. Det er ikke altid, du har din mobil, men måske har du en nøgle, et kort eller en gammel gadget, der kan hjælpe dig. Hvis du har din mobil, tjek om den virker – den kan være din vej til overlevelse. Kig derefter efter mad og vand, men vær forsigtig med, hvad du spiser! Ukendte fødevarer kan være farlige eller have uforudsigelige effekter.";
+        document.querySelector("#efficiency").innerHTML = "<h3>Sci-fi verden</h3> <p>I en sci-fi verden kan din mobil give dig adgang til teknologi, kort eller hjælpe dig med at hacke systemer. Kig efter elektronisk udstyr eller ressourcer, som kan bruges til kommunikation eller navigation.</p>"
+        document.querySelector("#requirement").innerHTML = "<h3>Fantasy verden</h3> <p>I en fantasy-verden kan du finde magiske objekter eller artefakter, der hjælper dig. Hold øje med krystaller, trylleformularer eller andre magiske genstande, der kan beskytte eller guide dig.</p>"
     }
 
 

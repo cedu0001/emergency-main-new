@@ -192,12 +192,23 @@ form button {
 	background-color: rgba(73, 73, 73, 0.559);
 	backdrop-filter: blur(10px) sepia(0.1);
 }
+/*  */
+@keyframes dialogFadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
 
-.zoom-in-animation {
-	animation: zoomin 5s linear infinite alternate;
+.dialog-animation {
+	animation: dialogFadeIn 0.4s ease-out;
 }
-@keyframes zoomin {
-}
+
+/*  */
 
 #pan {
 	background-image: url(../asset/teaser1-webp-ver.webp);
