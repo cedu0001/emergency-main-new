@@ -45,6 +45,7 @@ ul,
 }
 
 .slider::before {
+	/* .slider::before betyder: lav et element indeni .slider – før alt andet indhold. Det her pseudo-element bliver selve den runde "knap", der skubber frem og tilbage. position: absolute gør, at den kan placeres præcist inde i .slider. */
 	position: absolute;
 	content: "";
 	height: 22px;
@@ -57,10 +58,14 @@ ul,
 }
 
 input:checked + .slider::before {
+	/* input:checked betyder: hvis checkboxen er slået til. + 
+	.slider::before betyder: vælg .slider::before, som kommer lige efter input 
+	translate: 100% 0; betyder: flyt knappen helt til højre (100% på x-aksen) */
 	translate: 100% 0;
 }
 
 input:checked + .slider {
+	/* Når switchen er slået til (checked), ændrer .slider sin baggrundsfarve til mørk. Der kommer også en lys kant omkring den. */
 	background-color: #212121;
 	border: 0.2px solid;
 	border-color: aliceblue;

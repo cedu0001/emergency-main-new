@@ -63,30 +63,30 @@ articles.forEach(function(article){
  */
 ////////////////////// animation version
 
-function setupArticle(article){
+function setupArticle(article){ //Starter en funktion, der skal "sætte et artikel-element op", så det får interaktiv funktionalitet. Den tager ét article-element som input.
     const openBtn = article.querySelector("article > button");
     const dialog = article.querySelector("dialog");
     const closeBtn = article.querySelector(".close-dialog");
 
     openBtn.addEventListener("click", openDialog);
     function openDialog() {
-        dialog.querySelector("h3").scrollIntoView();
-        dialog.showModal();
+        dialog.querySelector("h3").scrollIntoView(); // Starter ved h3'eren
+        dialog.showModal(); //Åbner selve dialogen som en modal (den vises ovenpå resten af siden).
         
         dialog.classList.remove("dialog-animation");
         void dialog.offsetWidth;
         dialog.classList.add("dialog-animation");
     }
-
+//Først fjernes animationsklassen. void dialog.offsetWidth; tvinger browseren til at "genberegne layout". Så tilføjes klassen igen = animationen starter forfra.
     closeBtn.addEventListener("click", function(){
     dialog.close();
 
     });
 }
 
-const articles = document.querySelectorAll(".news_card");
+const articles = document.querySelectorAll(".news_card"); // Finder alle elementer med klassen .news_card (formodentlig artikler), og gemmer dem i en liste.
 
-articles.forEach(setupArticle);
+articles.forEach(setupArticle); // Går igennem hver artikel og kalder setupArticle(article) én gang for hver.
 
 articles.forEach((article) => {
     setupArticle(article);

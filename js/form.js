@@ -15,7 +15,7 @@ slider.addEventListener("change", updateValue);
 function updateValue(){
     console.log("updatevaluee");
     
-    /*  patienceValue.textContent = slider.value; */
+  
     if(slider.value > 49 && slider.value <85){
         console.log(`teskt er ${slider.value}`);
         slider.parentNode.style.accentColor = "var(--warning-color)"
