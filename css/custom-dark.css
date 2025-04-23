@@ -59,35 +59,35 @@
 	--form-submit-color-inverted: #000000;
 
 	/* Background colors */
-	--primary-bg-color: #fceb94;
-	--logotype-background-color: #000000;
-	--header-background-color: #6f90eb;
-	--article-background-color: #fffae2;
-	--daily-background-color: #ffffff;
-	--main-disclamer-background-color: #ff4b00;
-	--news-background-color: #ff00ee;
+	--primary-bg-color: #26242c;
+	--logotype-background-color: #0c0a13;
+	--header-background-color: #6d82bc;
+	--article-background-color: #e0dcc6;
+	--daily-background-color: #c0bbcd;
+	--main-disclamer-background-color: #cd693f;
+	/* --news-background-color: #ff00ee; */
 	--news-background-color-inverted: #dbe2f5;
-	--info-background-color: #dbdde3;
-	--headline-bg-color: #ff00f7;
-	--headline-bg-color-alert: #ff4b00;
-	--headline-bg-color-inverted: #000000;
-	--bodytext-bg-color: #ff00c3;
+	--info-background-color: #e3dbe3;
+	/* --headline-bg-color: #ff00f7; */
+	--headline-bg-color-alert: #cd693f;
+	--headline-bg-color-inverted: #0c0a13;
+	/* 	--bodytext-bg-color: #ff00c3;
 	--bodytext-bg-color-inverted: #ff00b7;
-	--cta-text-bg-color: #ff00bb;
-	--cta-text-bg-color-inverted: #000000;
-	--cta-nyheder-2-bg: #ffa680;
+	--cta-text-bg-color: #ff00bb; */
+	--cta-text-bg-color-inverted: #949494;
+	--cta-nyheder-2-bg: #eaa386;
 	--h-cta-text-bg-color: #fffae2;
 	--cta-header-text-bg-color: #86533d; /* cta knapper, de andre to sider */
-	--followup-text-bg-color-inverted: #ff00ff;
+	/* --followup-text-bg-color-inverted: #ff00ff; */
 	--form-background-color: #ffffff;
-	--form-text-color: #000000;
-	--formfield-background-color: #ff00c3;
-	--formfield-background-color-active: #ff00e1;
-	--form-submit-bg-color: #ff4b00;
-	--form-submit-bg-color-inverted: #ff00e1;
-	--cta-artikel-bg-color: #ff4b00;
+	/* 	--form-text-color: #000000; */
+	/* --formfield-background-color: #ff00c3;
+	--formfield-background-color-active: #ff00e1; */
+	/* --form-submit-bg-color: #ff4b00; */
+	/* --form-submit-bg-color-inverted: #ff00e1; */
+	--cta-artikel-bg-color: #cd693f;
 
 	/* Info-boxes */
-	--info-bg-color-yellow: #fceb94;
-	--info-bg-color-green: #def5db;
+	--info-bg-color-yellow: #cfc58e;
+	--info-bg-color-green: #badab6;
 }

@@ -4,25 +4,33 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/custom.css" />
-		<link rel="stylesheet" href="css/general.css" />
+		<link id="lightmode" rel="stylesheet" href="css/custom.css" />
+		<link id="lightmode" rel="stylesheet" href="css/general.css" />
 		<link rel="stylesheet" href="css/layout.css" />
 		<link rel="stylesheet" href="css/burger.css" />
 		<link rel="stylesheet" href="css/cards.css" />
 		<script src="/js/popup.js" defer></script>
 		<script src="/js/cards.js" defer></script>
+		<script src="/js/dark.js" defer></script>
 		<link rel="icon" type="image/png" href="img/fav.png" />
 		<title>Emergency Site</title>
 	</head>
 	<body id="frontpage">
+		<div class="flex">
+			<legend id="switchtext3">Dark Mode</legend>
+			<label class="switch">
+				<input id="changeBtn3" type="checkbox" />
+				<span class="slider"> </span>
+			</label>
+		</div>
 		<header>
 			<nav>
 				<div id="logotype-wrapper">
 					<a href="index.html"> <img src="/asset/logo tekst.svg" alt="teaser_img" /> </a>
 				</div>
 				<ul class="menu">
-					<li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-					<li><a class="menuItem" href="register.html">Indberet</a></li>
+					<li><a href="instruction.html">Nærkontakt </a></li>
+					<li><a href="register.html">Indberet</a></li>
 				</ul>
 			</nav>
 		</header>

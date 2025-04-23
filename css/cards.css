@@ -127,18 +127,6 @@
 	width: max-content;
 }
 
-/* i dont use this :)) */
-/* .menuItem {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 30px;
-	padding-right: 30px;
-	border-radius: var(--border-radius);
-	text-align: center;
-	text-decoration: none;
-	width: max-content;
-} */
-
 .cta_btn:after {
 	content: "\2192";
 	margin-left: 0.5rem;
@@ -244,7 +232,7 @@ form button {
 }
 
 .up-down_animation {
-	animation: up-down 5s linear infinite alternate;
+	animation: up-down 3s linear infinite alternate;
 }
 .up-down_animation.stop {
 	animation-play-state: paused;
