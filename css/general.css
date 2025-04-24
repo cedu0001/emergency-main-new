@@ -101,7 +101,7 @@ footer {
 	color: var(--logotype-color);
 }
 #main-disclamer {
-	height: 180px;
+	height: 194px;
 	background-color: var(--main-disclamer-background-color);
 	display: flex;
 	justify-content: flex-start;
@@ -160,6 +160,8 @@ h1 {
 	margin: 5px 0;
 	line-height: 1rem;
 	text-align: left;
+	padding-bottom: 15px;
+	padding-top: 15px;
 }
 h2 {
 	font-size: var(--headline2-size);

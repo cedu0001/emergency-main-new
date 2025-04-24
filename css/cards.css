@@ -168,12 +168,12 @@ form button {
 	margin-bottom: 15px;
 }
 
-/* #dialog-1 {
-	animation: fade-out 0.7s ease-out;
+#dialog-1 a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
 }
-#dialog-1 {
-	animation: fade-in 0.7s ease-out;
-} */
+
 #dialog-1::backdrop,
 #dialog-2::backdrop,
 #dialog-3::backdrop {
